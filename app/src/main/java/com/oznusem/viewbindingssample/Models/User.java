@@ -7,6 +7,7 @@ public class User {
 
 	private final String firstName;
 	private final String lastName;
+	private boolean isFriend;
 
 	public User(String firstName, String lastName) {
 		this.firstName = firstName;
@@ -19,5 +20,13 @@ public class User {
 
 	public String getLastName() {
 		return this.lastName;
+	}
+
+	public boolean isFriend() {
+		return isFriend;
+	}
+
+	public void setIsFriend(boolean isFriend) {
+		this.isFriend = isFriend;
 	}
 }

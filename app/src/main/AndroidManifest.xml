@@ -20,6 +20,10 @@
             android:name=".SimpleModelBindingActivity"
             android:label="@string/title_activity_simple_model_binding" >
         </activity>
+        <activity
+            android:name=".EventsBindingActivity"
+            android:label="@string/title_activity_events_binding" >
+        </activity>
     </application>
 
 </manifest>

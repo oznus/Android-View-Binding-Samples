@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 
 		findViewById(R.id.simpleModelBinding).setOnClickListener(this);
+		findViewById(R.id.eventBinding).setOnClickListener(this);
 	}
 
 	@Override
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 		switch (v.getId()) {
 			case R.id.simpleModelBinding:
 				startActivity(new Intent(this,SimpleModelBindingActivity.class));
+				break;
+			case R.id.eventBinding:
+				startActivity(new Intent(this,EventsBindingActivity.class));
 				break;
 		}
 	}

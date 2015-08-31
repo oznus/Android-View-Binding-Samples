@@ -4,4 +4,8 @@
 	<string name="simple_model_binding">Simple Model binding</string>
 	<string name="action_settings">Settings</string>
 	<string name="title_activity_simple_model_binding">SimpleModelBinding</string>
+	<string name="title_activity_events_binding">EventsBindingActivity</string>
+
+	<string name="hello_world">Hello world!</string>
+	<string name="events_binding">Events Binding</string>
 </resources>

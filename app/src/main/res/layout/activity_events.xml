@@ -1,0 +1,31 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<data>
+		<variable
+			name="handlers"
+			type="com.oznusem.viewbindingssample.EventsBindingActivity.EventsBindingActivityOnClicks"/>
+
+		<variable
+			name="user"
+			type="com.oznusem.viewbindingssample.Models.User"/>
+	</data>
+
+	<LinearLayout
+		android:padding="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="@{user.isFriend() ? handlers.onClickFriend : handlers.onClickEnemy}"
+			android:text="@{user.firstName}"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="@{!user.isFriend() ? handlers.onClickFriend : handlers.onClickEnemy}"
+			android:text="@{user.lastName}"/>
+	</LinearLayout>
+</layout>
