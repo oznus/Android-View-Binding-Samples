@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SimpleModelBindingActivity"
+            android:label="@string/title_activity_simple_model_binding" >
+        </activity>
     </application>
 
 </manifest>
